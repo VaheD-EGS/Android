@@ -3,6 +3,7 @@
     package="com.egs.ansroid.samples">
 
     <application
+        android:process=":myprcoess"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EGSAndroidtrainingsamples">
         <activity
+
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
