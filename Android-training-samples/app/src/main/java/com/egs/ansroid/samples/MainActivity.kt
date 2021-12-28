@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         //Lesson1().makeRequest3()
         Lesson1().makeRequest4()
         //Lesson1().makeRequest5()
+
+        //************** LESSON 2 **************************
+        //Lesson2().makeRequest1()
+        //Lesson2().makeRequest2("111")
     }
 }
