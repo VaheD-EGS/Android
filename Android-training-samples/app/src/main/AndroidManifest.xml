@@ -3,17 +3,27 @@
     package="com.egs.ansroid.samples">
 
     <application
-        android:process=":myprcoess"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:process=":myprcoess"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EGSAndroidtrainingsamples">
         <activity
-
-            android:name=".MainActivity"
+            android:name=".lesson4.ChannelTestActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_cannels_test"
+            android:theme="@style/Theme.EGSAndroidtrainingsamples.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
