@@ -1,12 +1,13 @@
 package com.egs.ansroid.samples
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.egs.ansroid.samples.lesson1.Lesson1
-import com.egs.ansroid.samples.lesson3.Lesson3
-import com.egs.ansroid.samples.lesson4.Lesson4
+import androidx.annotation.RequiresApi
+import com.egs.ansroid.samples.lesson7.Lesson7
 
 class MainActivity : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         //Lesson3().makeRequest1()
 
         //************** LESSON 4 **************************
-        Lesson4().makeRequest5()
+        //Lesson4().makeRequest5()
+
+        //************** LESSON 7 **************************
+//        Lesson7().getMessage()
+//        Lesson7().customOperator()
+//        Lesson7().exceptionExperiment1()
+//        Lesson7().exceptionExperiment2()
+//        Lesson7().exceptionExperiment3()
+//        Lesson7().exceptionExperiment3()
+//        Lesson7().exceptionExperiment3()
+//        Lesson7().catchOperator()
     }
 }
