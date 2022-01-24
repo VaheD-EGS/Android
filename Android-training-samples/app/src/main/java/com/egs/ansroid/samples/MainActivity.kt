@@ -4,7 +4,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import com.egs.ansroid.samples.lesson7.Lesson7
+import com.egs.ansroid.samples.lesson8.Lesson8
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -30,13 +30,18 @@ class MainActivity : AppCompatActivity() {
         //Lesson4().makeRequest5()
 
         //************** LESSON 7 **************************
-//        Lesson7().getMessage()
-//        Lesson7().customOperator()
-//        Lesson7().exceptionExperiment1()
-//        Lesson7().exceptionExperiment2()
-//        Lesson7().exceptionExperiment3()
-//        Lesson7().exceptionExperiment3()
-//        Lesson7().exceptionExperiment3()
-//        Lesson7().catchOperator()
+        //Lesson7().getMessage()
+        //Lesson7().customOperator()
+        //Lesson7().exceptionExperiment1()
+        //Lesson7().exceptionExperiment2()
+        //Lesson7().exceptionExperiment3()
+        //Lesson7().exceptionExperiment3()
+        //Lesson7().exceptionExperiment3()
+        //Lesson7().catchOperator()
+
+
+        //************** LESSON 8 **************************
+        Lesson8().getMessageFlow()
+
     }
 }
