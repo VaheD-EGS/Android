@@ -4,7 +4,9 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
+import com.egs.ansroid.samples.lesson7.Lesson7
 import com.egs.ansroid.samples.lesson8.Lesson8
+import com.egs.ansroid.samples.lesson9.Lesson9
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -41,7 +43,14 @@ class MainActivity : AppCompatActivity() {
 
 
         //************** LESSON 8 **************************
-        Lesson8().getMessageFlow()
+//        Lesson8().getMessageFlow()
+
+        //************** LESSON 9 **************************
+
+        //Lesson9().flowTest()
+//        Lesson9().switchingScope()
+//        Lesson9().violatesTest()
+        Lesson9().zipTest()
 
     }
 }

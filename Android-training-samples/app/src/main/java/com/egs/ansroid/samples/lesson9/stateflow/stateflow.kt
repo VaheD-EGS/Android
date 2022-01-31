@@ -1,4 +1,4 @@
-package com.egs.ansroid.samples.lesson8.flows.sharedflow.stateflow
+package com.egs.ansroid.samples.lesson9.stateflow
 
 import android.app.Service
 import android.content.Intent
@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
+
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -23,7 +24,6 @@ class DownloadService : Service() {
         private val _downloadState = MutableStateFlow<ServiceStatus>(Stopped)
         val downloadState = _downloadState.asStateFlow()
     }
-
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
 
@@ -50,7 +50,7 @@ class DownloadService : Service() {
     private suspend fun downloadUrl(url: String) {
         /* Simulate a download */
         for (i in 0..100) {
-            _downloadState.tryEmit(Downloading(i))
+            _downloadState.tryEmit(Downloading(i) )
             delay(10)
         }
     }
